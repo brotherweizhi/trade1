@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/picre1"
+        android:layout_marginRight="10dp"
+        android:id="@+id/ivAvastar"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvUsername"
+        android:textColor="@color/colorAccent"
+        android:text="bradway"
+        android:layout_toRightOf="@+id/ivAvastar"
+        android:layout_alignTop="@+id/ivAvastar"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvComment"
+        android:textColor="@color/sepeator"
+        android:text="wdnmd"
+        android:layout_below="@+id/tvUsername"
+        android:layout_alignLeft="@+id/tvUsername"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvCreated"
+        android:maxLength="10"
+        android:textColor="@color/colorAccent"
+        android:text="bradway"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

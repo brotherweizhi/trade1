@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">trade</string>
+    <string name="welcomre">welcomre</string>
+    <string name="inputaccount">请输入账号</string>
+    <string name="inputpassword">请输入密码</string>
+    <string name="tvReg">没有账号？点击注册</string>
+    <string name="loginbutton">登录</string>
+    <string name="ensurepw">请再次输入密码</string>
+    <string name="my">我的</string>
+    <string name="onsale">在售商品</string>
+    <string name="sold">卖出商品</string>
+    <string name="bought">已买商品</string>
+    <string name="love">收藏</string>
+    <string name="resign">注销</string>
+    <string name="setting">设置</string>
+
+</resources>

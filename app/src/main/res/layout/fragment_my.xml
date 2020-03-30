@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/base_color"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="我的"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/setting"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/pond_setting" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--登陆前-->
+            <RelativeLayout
+                android:id="@+id/mynologin"
+                android:layout_width="match_parent"
+                android:layout_height="108dp"
+                android:background="@drawable/bg_myavastar"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="80dp"
+                    android:layout_height="73dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@mipmap/account_icon" />
+
+                <TextView
+                    android:id="@+id/tvNoLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/imageView"
+                    android:text="还没有登陆"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/LoginButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/bg_button_dark"
+                    android:text="马上登录"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <!--登陆后-->
+            <RelativeLayout
+                android:id="@+id/MyLogined"
+                android:layout_width="match_parent"
+                android:layout_height="108dp"
+                android:background="@drawable/bg_myavastar"
+                android:padding="10dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/UserPic"
+                    android:layout_width="80dp"
+                    android:layout_height="73dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@mipmap/account_icon" />
+
+                <TextView
+                    android:id="@+id/tvLogined"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/UserPic"
+                    android:text="用户名"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/tvLoginedArrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="15dp"
+                    android:src="@mipmap/entry_arrow" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_mysell">
+
+                <RelativeLayout
+                    android:id="@+id/tvOnSell"
+                    android:layout_width="match_parent"
+                    android:layout_height="89dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/entry_icon_on_shelf"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="1"
+                        android:src="@mipmap/entry_icon_on_shelf" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/entry_icon_on_shelf"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="-44dp"
+                        android:layout_marginBottom="-29dp"
+                        android:layout_toRightOf="@id/entry_icon_on_shelf"
+                        android:text="@string/onsale"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tvMyFavor"
+                    android:layout_width="match_parent"
+                    android:layout_height="89dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/entry_icon_on_shelf2"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="1"
+                        android:src="@mipmap/entry_icon_favourite" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/entry_icon_on_shelf2"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="-30dp"
+                        android:layout_marginBottom="-28dp"
+                        android:layout_toRightOf="@id/entry_icon_on_shelf2"
+                        android:text="@string/love"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15sp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

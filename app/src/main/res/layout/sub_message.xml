@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivPic"
+        android:layout_width="54dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/entry_icon_favourite" />
+
+    <ImageView
+        android:id="@+id/ivRead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/mini_red_dot"
+        android:layout_toRightOf="@+id/tvUsername"
+        android:layout_alignTop="@+id/tvUsername"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ivPic"
+        android:textColor="@color/colorAccent"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/ivPic"
+        android:text="我去饿"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="的撒旦"
+        android:textSize="15sp"
+        android:layout_alignLeft="@+id/tvUsername"
+        android:layout_alignBottom="@+id/ivPic"/>
+    <!--<TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1天"
+        android:textSize="13sp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"/>-->
+
+
+</RelativeLayout>

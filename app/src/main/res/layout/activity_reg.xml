@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp">
+
+        <ImageView
+            android:id="@+id/RegBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/aliuser_title_back_normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="100dp"
+        android:layout_width="match_parent"
+        android:id="@+id/reg_account"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/regaccount"
+            android:layout_width="265dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="80dp"
+            android:background="#FFF"
+            android:hint="@string/inputaccount"
+
+            android:selectAllOnFocus="false"
+            android:singleLine="false" />
+
+        <View
+            android:id="@+id/view2"
+            android:paddingLeft="400dp"
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:layout_height="0.5dp"
+            android:background="@color/base_color"
+            android:layout_below="@+id/inputaccount"/>
+
+
+        <EditText
+            android:id="@+id/regtel"
+            android:layout_width="265dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="80dp"
+            android:background="#FFF"
+            android:hint="请输入手机号"
+            android:inputType="phone"
+            android:selectAllOnFocus="false"
+            android:singleLine="false" />
+        <View
+            android:id="@+id/view7"
+            android:paddingLeft="400dp"
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:layout_height="0.5dp"
+            android:background="@color/base_color"
+            android:layout_below="@+id/inputaccount"/>
+
+        <EditText
+            android:id="@+id/regpassword"
+            android:layout_width="265dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="80dp"
+            android:background="#FFF"
+            android:hint="@string/inputpassword"
+            android:inputType="textPassword"
+            android:selectAllOnFocus="false"
+            android:singleLine="false" />
+        <View
+            android:id="@+id/view4"
+            android:paddingLeft="400dp"
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:layout_height="0.5dp"
+            android:background="@color/base_color"
+            android:layout_below="@+id/inputaccount"/>
+
+        <EditText
+            android:id="@+id/enregpassword"
+            android:layout_width="265dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="80dp"
+            android:background="#FFF"
+            android:hint="@string/ensurepw"
+            android:inputType="textPassword"
+            android:selectAllOnFocus="false"
+            android:singleLine="false" />
+
+        <View
+            android:id="@+id/view3"
+            android:paddingLeft="400dp"
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:layout_height="0.5dp"
+            android:background="@color/base_color"
+            android:layout_below="@+id/inputpassword"/>
+
+        <Button
+            android:id="@+id/regbutton"
+            style="@android:style/Widget.DeviceDefault.Light.Button"
+            android:layout_width="256dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_button"
+            android:text="注册" />
+
+</LinearLayout>
+</LinearLayout>

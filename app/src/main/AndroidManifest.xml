@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.trade">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:name="com.MyApplication"
+        android:theme="@android:style/Theme.Black.NoTitleBar">
+        <activity android:name="com.activity.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.activity.MainActivity"/>
+        <activity android:name="com.activity.LoginActivity"/>
+        <activity android:name="com.activity.RegActivity"/>
+        <activity android:name="com.activity.SettingActivity"/>
+        <activity android:name="com.activity.ChatActivity"/>
+        <activity android:name="com.activity.ItemDetailActivity"/>
+        <activity android:name="com.activity.ItemPicPreview"/>
+        <activity android:name="com.activity.SearchActivity"/>
+        <activity android:name="com.activity.PostActivity"/>
+        <activity android:name="com.activity.Post2Activity"/>
+        <activity android:name="com.activity.FavorActivity"/>
+        <activity android:name="com.activity.MyItemActivity"/>
+        <activity android:name="com.activity.SearchResuliActivity"/>
+        <activity android:name="com.activity.CateActivity"/>
+        <activity android:name="com.activity.BuyActivity"/>
+        <activity android:name="com.activity.SysMessageActivity"/>
+    </application>
+
+</manifest>

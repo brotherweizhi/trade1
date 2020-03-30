@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tvChatTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@color/gray"
+            android:text="2020/10/1"
+            android:textColor="@color/colorAccent"
+            android:layout_marginBottom="10dp"/>
+
+
+        <TextView
+            android:id="@+id/subChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvChatTime"
+            android:background="@drawable/chat_you_bg"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="30dp"
+            android:paddingRight="10dp"
+            android:paddingTop="6dp"
+            android:text="地方大师上反对法地方是旦"
+            android:textSize="15sp"
+            android:textColor="@color/colorAccent" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

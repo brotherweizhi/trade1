@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="@drawable/bg_item_grid">
+
+    <ImageView
+        android:id="@+id/ivPic"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pic2"/>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="标题标题"
+            android:textColor="#4B4B4B"
+            android:layout_below="@+id/ivPic"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="200.0"
+            android:textColor="#FF6464"
+            android:layout_below="@+id/tvTitle"
+            android:textSize="15sp" />
+    <TextView
+        android:id="@+id/tvCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="广东工业大学"
+        android:textColor="#808080"
+        android:layout_below="@+id/tvPrice"
+        android:layout_marginBottom="3dp"
+        android:textSize="10sp" />
+
+
+</RelativeLayout>
